@@ -36,10 +36,17 @@ section.infos {
             }
         }
     }
+    .custom-btn {
+        @include custom-btn;
+        &:hover {
+            background-color: $primary;
+            color: $onprim;
+        }
+    }
 }
 
 section.experience {
-    background-image: url(../images/exp.png);
+    background-image: url(../images/exper.png);
     background-repeat: no-repeat;
     background-position: right;
     .container {
@@ -71,17 +78,22 @@ section.portfolio {
     background-image: url(../images/port.png);
     background-repeat: no-repeat;
     background-position: right;
+    h2 {
+        font-size: 46px;
+        font-weight: bold !important;
+        color: #58a6ff;
+        padding: 0px 20px;
+        margin-bottom: 50px;
+    }
     .container {
+        border-radius: 30px;
+        background-color: $surface;
         .row {
-            border-radius: 30px;
-            background-color: $surface;
             .cards {
-                display: inline-block;
                 .gallarycard {
                     background: $background;
                     border: 2px solid $primary;
                     height: 300px;
-                    width: 300px;
                     border-radius: 1rem;
                     padding: 1.5rem;
                     overflow: hidden;
@@ -123,6 +135,9 @@ section.portfolio {
                         .img9 {
                             transform: translateY(-13rem);
                         }
+                        .img10 {
+                            transform: translateY(-79rem);
+                        }
                     }
                     .custom-btn {
                         @include custom-btn;
@@ -141,7 +156,7 @@ section.portfolio {
                         display: none;
                     }
                     img {
-                        transition: 1s ease-in-out;
+                        transition: 3s ease-in-out;
                         max-width: 100%;
                         border-radius: 20px;
                         z-index: 1;
@@ -160,6 +175,14 @@ section.portfolio {
                         margin-top: 40px;
                     }
                 }
+            }
+        }
+        .coming-soon {
+            img {
+                margin-bottom: 2rem;
+            }
+            h2 {
+                color: $secondary !important;
             }
         }
     }

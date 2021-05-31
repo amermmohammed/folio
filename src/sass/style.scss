@@ -35,41 +35,7 @@ body {
 }
 
 #copyright {
-    color: red;
+    color: $secondary;
     font-size: 24px;
     z-index: 10;
-}
-
-section.contact {
-    height: 600px;
-    background-image: url(../images/contact.png);
-    background-repeat: no-repeat;
-    .container {
-        .row {
-            border-radius: 30px;
-            background-color: $surface;
-            h4 {
-                color: $onbg;
-            }
-            .info {
-                color: $onbg;
-                width: 400px;
-                svg {
-                    color: $primary !important;
-                    margin-right: 2px;
-                }
-            }
-            .custom-btn {
-                @include custom-btn;
-                &:hover {
-                    background-color: $primary;
-                    color: $onprim;
-                }
-            }
-            .custom-form-control {
-                background-color: $surface;
-                border: 2px solid $primary;
-            }
-        }
-    }
 }

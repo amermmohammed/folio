@@ -44,7 +44,7 @@ $(window).on('resize', function() {
 $(".navbar-toggler").click(function() {
     setTimeout(function() { test(); });
 });
-$('#copyright').text("Coded with ❤ by Amer" + " " + new Date().getFullYear());
+$('#copyright').text("Made with ❤ by Amer" + " " + new Date().getFullYear());
 
 
 

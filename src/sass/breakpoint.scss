@@ -1,16 +1,110 @@
-@media (min-width: 767px) {
+@media (min-width: 768px) {
     section.education {
         height: 500px !important;
     }
 }
 
-@media (max-width: 1199px) {}
+@media (max-width: 1199px) {
+    section.portfolio .container .row .cards .gallarycard h2 {
+        font-size: 27px;
+    }
+}
 
-@media (min-width: 1120px) and (max-width: 1577px) {}
+@media (min-width: 767px) and (max-width: 991px) {
+    section.portfolio .container .row .cards .gallarycard h2 {
+        font-size: 22px;
+    }
+    section.portfolio {
+        background-image: url(../images/port.png);
+        background-repeat: no-repeat;
+        background-position: right;
+        h2 {
+            font-size: 46px;
+            font-weight: bold !important;
+            color: #58a6ff;
+            padding: 0px 0px !important;
+            margin-bottom: 50px;
+        }
+        .container {
+            border-radius: 30px;
+            background-color: $surface;
+            .row {
+                .cards {
+                    .gallarycard {
+                        &:hover,
+                        &:focus-within {
+                            .custom-btn {
+                                display: block;
+                            }
+                            .custom-btn1 {
+                                display: block;
+                            }
+                            border: 2px solid $secondary;
+                            .img1 {
+                                transform: translateY(-15rem);
+                            }
+                            .img2 {
+                                transform: translateY(-5rem);
+                            }
+                            .img3 {
+                                transform: translateY(-8rem);
+                            }
+                            .img4 {
+                                transform: translateY(-17rem);
+                            }
+                            .img5 {
+                                transform: translateY(-18rem);
+                            }
+                            .img6 {
+                                transform: translateY(-10rem);
+                            }
+                            .img7 {
+                                transform: translateY(-25rem);
+                            }
+                            .img8 {
+                                transform: translateY(-16rem);
+                            }
+                            .img9 {
+                                transform: translateY(-10rem);
+                            }
+                            .img10 {
+                                transform: translateY(-29rem);
+                            }
+                        }
+                        .custom-btn {
+                            padding: 5px !important;
+                            a {
+                                font-size: 12px !important;
+                            }
+                        }
+                        .custom-btn1 {
+                            padding: 5px !important;
+                            a {
+                                font-size: 12px !important;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
 
-@media (max-width: 1119px) {}
-
-@media (max-width: 991px) {}
+@media (max-width: 991px) {
+    section.experience .container .row .card h5,
+    section.education .container .row .card h5 {
+        font-size: 28px;
+        padding: 0;
+        margin-bottom: 30px;
+    }
+    section.experience .container .row .card p,
+    section.education .container .row .card p {
+        font-size: 16px;
+    }
+    section.portfolio .container .row .cards .gallarycard {
+        height: 210px;
+    }
+}
 
 @media (max-width: 767px) {
     section.infos .info .custom-card img {
@@ -31,8 +125,93 @@
         line-height: 25px;
         text-align: justify;
     }
+    section.portfolio .container .row .cards .gallarycard {
+        height: 300px !important;
+        width: 90%;
+    }
 }
 
-@media (max-width: 575px) {}
-
-@media (max-width: 480px) {}
+@media (max-width: 575px) {
+    section.infos .info .custom-card .card-body {
+        margin-top: -9px;
+    }
+    section.education .container .row,
+    section.experience .container .row {
+        border-radius: 30px;
+        background: rgba(($surface), 0.8);
+    }
+    section.education .container .row .card,
+    section.experience .container .row .card {
+        background: rgba(($background), 0.8);
+    }
+    section.portfolio .container {
+        border-radius: 30px;
+        background-color: transparent !important;
+    }
+    section.portfolio .container .row .cards .gallarycard {
+        background: rgba(($surface), 0.8);
+    }
+    section.contact .container .row {
+        margin-left: 0px;
+        margin-right: 0px;
+        background: rgba(($surface), 0.8);
+    }
+    section.portfolio {
+        background-image: url(../images/port.png);
+        background-repeat: no-repeat;
+        background-position: right;
+        h2 {
+            font-size: 46px;
+            font-weight: bold !important;
+            color: #58a6ff;
+            padding: 0px 20px;
+            margin-bottom: 50px;
+        }
+        .container {
+            border-radius: 30px;
+            background-color: $surface;
+            .row {
+                .cards {
+                    .gallarycard {
+                        &:hover,
+                        &:focus-within {
+                            .img1 {
+                                transform: translateY(-15rem);
+                            }
+                            .img2 {
+                                transform: translateY(-5rem);
+                            }
+                            .img3 {
+                                transform: translateY(-8rem);
+                            }
+                            .img4 {
+                                transform: translateY(-17rem);
+                            }
+                            .img5 {
+                                transform: translateY(-18rem);
+                            }
+                            .img6 {
+                                transform: translateY(-10rem);
+                            }
+                            .img7 {
+                                transform: translateY(-25rem);
+                            }
+                            .img8 {
+                                transform: translateY(-16rem);
+                            }
+                            .img9 {
+                                transform: translateY(-10rem);
+                            }
+                            .img10 {
+                                transform: translateY(-29rem);
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    #copyright {
+        font-size: 20px !important;
+    }
+}
