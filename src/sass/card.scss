@@ -39,6 +39,10 @@ section.infos {
 }
 
 section.experience {
+    height: 500px;
+    background-image: url(../images/exp.png);
+    background-repeat: no-repeat;
+    background-position: right;
     .card {
         background-color: transparent;
     }
@@ -48,6 +52,9 @@ section.experience {
 }
 
 section.education {
+    height: 500px;
+    background-image: url(../images/edu.png);
+    background-repeat: no-repeat;
     .card {
         background-color: transparent;
     }
@@ -56,83 +63,103 @@ section.education {
     }
 }
 
-.cards {
-    display: flex;
-}
-
-.gallarycard {
-    background: $surface;
-    border: 2px solid $primary;
-    height: 300px;
-    width: 300px;
-    border-radius: 1rem;
-    padding: 1.5rem;
-    transition: 0.5s ease-in-out;
-    overflow: hidden;
-    img {
-        max-width: 100%;
-        border-radius: 20px;
-    }
-    h2 {
-        font-size: 30px;
-        font-weight: bold !important;
-        color: $primary;
-        padding: 0px 20px;
-        margin-bottom: 50px;
-        a {
-            color: $secondary;
+section.portfolio {
+    background-image: url(../images/port.png);
+    background-repeat: no-repeat;
+    background-position: right;
+    .container {
+        .row {
+            border-radius: 30px;
+            background-color: $surface;
+            .cards {
+                display: inline-block;
+                .gallarycard {
+                    background: $background;
+                    border: 2px solid $primary;
+                    height: 300px;
+                    width: 300px;
+                    border-radius: 1rem;
+                    padding: 1.5rem;
+                    overflow: hidden;
+                    margin: 2rem;
+                    position: relative;
+                    &:hover,
+                    &:focus-within {
+                        .custom-btn {
+                            display: block;
+                        }
+                        .custom-btn1 {
+                            display: block;
+                        }
+                        border: 2px solid $secondary;
+                        .img1 {
+                            transform: translateY(-25rem);
+                        }
+                        .img2 {
+                            transform: translateY(-9rem);
+                        }
+                        .img3 {
+                            transform: translateY(-12rem);
+                        }
+                        .img4 {
+                            transform: translateY(-27rem);
+                        }
+                        .img5 {
+                            transform: translateY(-28rem);
+                        }
+                        .img6 {
+                            transform: translateY(-16rem);
+                        }
+                        .img7 {
+                            transform: translateY(-35rem);
+                        }
+                        .img8 {
+                            transform: translateY(-26rem);
+                        }
+                        .img9 {
+                            transform: translateY(-13rem);
+                        }
+                    }
+                    .custom-btn {
+                        @include custom-btn;
+                        position: absolute;
+                        bottom: 4px;
+                        left: 28px;
+                        z-index: 10;
+                        display: none;
+                    }
+                    .custom-btn1 {
+                        @include custom-btn;
+                        position: absolute;
+                        bottom: 4px;
+                        right: 28px;
+                        z-index: 10;
+                        display: none;
+                    }
+                    img {
+                        transition: 1s ease-in-out;
+                        max-width: 100%;
+                        border-radius: 20px;
+                        z-index: 1;
+                    }
+                    h2 {
+                        font-size: 30px;
+                        font-weight: bold !important;
+                        color: $primary;
+                        padding: 0px 20px;
+                        margin-bottom: 50px;
+                        position: absolute;
+                        z-index: 10;
+                        a {
+                            color: $secondary;
+                        }
+                    }
+                    p {
+                        color: $onsurface;
+                        margin-top: 40px;
+                    }
+                }
+            }
         }
-    }
-    p {
-        color: $onsurface;
-    }
-}
-
-.gallarycard:not(:first-child) {
-    margin-left: -2rem;
-}
-
-.gallarycard:not(:last-child):hover,
-.gallarycard:not(:last-child):focus-within {
-    transform: translateY(-1rem);
-    ~.gallarycard {
-        transform: translateX(2rem);
-    }
-}
-
-.gallarycard {
-    img {
-        transition: 1.5s ease-in-out;
-    }
-}
-
-.gallarycard:hover,
-.gallarycard:focus-within {
-    .img1 {
-        transform: translateY(-25rem);
-    }
-    .img2 {
-        transform: translateY(-9rem);
-    }
-    .img3 {
-        transform: translateY(-12rem);
-    }
-    .img4 {
-        transform: translateY(-27rem);
-    }
-    .img5 {
-        transform: translateY(-28rem);
-    }
-    .img6 {
-        transform: translateY(-16rem);
-    }
-    .img7 {
-        transform: translateY(-35rem);
-    }
-    .img8 {
-        transform: translateY(-26rem);
-    }
-    .img9 {
-        transform: translateY(-13rem);
     }
 }

@@ -107,7 +107,7 @@ body {
         h5 {
             font-size: 36px;
             font-weight: bold !important;
-            color: $primary;
+            color: $secondary;
             padding: 0px 20px;
             margin-bottom: 50px;
         }
@@ -116,5 +116,14 @@ body {
             color: $onsurface;
             line-height: 32px;
         }
+    }
+}
+
+@mixin custom-btn {
+    border: none;
+    background-color: $secondary;
+    a {
+        text-decoration: none;
+        color: $onsec;
     }
 }
