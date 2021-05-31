@@ -1,32 +1,38 @@
-@media (min-width: 991px) and (max-width: 1199px) {
-
+@media (min-width: 767px) {
+    section.education {
+        height: 500px !important;
+    }
 }
 
-@media (max-width: 1199px) {
+@media (max-width: 1199px) {}
 
-}
+@media (min-width: 1120px) and (max-width: 1577px) {}
 
-@media (min-width: 1120px) and (max-width: 1577px) {
+@media (max-width: 1119px) {}
 
-}
-
-@media (max-width: 1119px) {
-   
-}
-
-@media (max-width: 991px) {
-   
-}
+@media (max-width: 991px) {}
 
 @media (max-width: 767px) {
-   
-  
+    section.infos .info .custom-card img {
+        margin: 0 0rem;
+    }
+    section.infos .info .custom-card .card-body h5 {
+        font-size: 30px;
+        padding: 0px 10px;
+        margin-bottom: 30px;
+    }
+    section.infos .info .custom-card .card-body h6 {
+        font-size: 20px;
+        margin-bottom: 30px;
+    }
+    section.infos .info .custom-card .card-body p {
+        font-size: 18px;
+        color: #e5e7e9;
+        line-height: 25px;
+        text-align: justify;
+    }
 }
 
-@media (max-width: 575px) {
+@media (max-width: 575px) {}
 
-}
-
-@media (max-width: 480px) {
-
-}
+@media (max-width: 480px) {}

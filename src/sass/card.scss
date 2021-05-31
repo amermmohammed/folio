@@ -39,27 +39,31 @@ section.infos {
 }
 
 section.experience {
-    height: 500px;
     background-image: url(../images/exp.png);
     background-repeat: no-repeat;
     background-position: right;
-    .card {
-        background-color: transparent;
-    }
-    .custom-card-small {
-        @include custom-card-small;
+    .container {
+        .row {
+            border-radius: 30px;
+            background-color: $surface;
+            .card {
+                @include custom-card-primary;
+            }
+        }
     }
 }
 
 section.education {
-    height: 500px;
     background-image: url(../images/edu.png);
     background-repeat: no-repeat;
-    .card {
-        background-color: transparent;
-    }
-    .custom-card-small {
-        @include custom-card-small;
+    .container {
+        .row {
+            border-radius: 30px;
+            background-color: $surface;
+            .card {
+                @include custom-card-primary;
+            }
+        }
     }
 }
 
@@ -144,21 +148,52 @@ section.portfolio {
                     }
                     h2 {
                         font-size: 30px;
+                        color: $secondary;
                         font-weight: bold !important;
-                        color: $primary;
                         padding: 0px 20px;
                         margin-bottom: 50px;
                         position: absolute;
                         z-index: 10;
-                        a {
-                            color: $secondary;
-                        }
                     }
                     p {
                         color: $onsurface;
                         margin-top: 40px;
                     }
                 }
+            }
+        }
+    }
+}
+
+section.contact {
+    height: 600px;
+    background-image: url(../images/contact.png);
+    background-repeat: no-repeat;
+    .container {
+        .row {
+            border-radius: 30px;
+            background-color: $surface;
+            h4 {
+                color: $onbg;
+            }
+            .info {
+                color: $onbg;
+                width: 400px;
+                svg {
+                    color: $primary !important;
+                    margin-right: 2px;
+                }
+            }
+            .custom-btn {
+                @include custom-btn;
+                &:hover {
+                    background-color: $primary;
+                    color: $onprim;
+                }
+            }
+            .custom-form-control {
+                background-color: $surface;
+                border: 2px solid $primary;
             }
         }
     }

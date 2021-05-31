@@ -99,23 +99,22 @@ body {
     background: $surface;
 }
 
-@mixin custom-card-small {
+@mixin custom-card-primary {
     border: none;
     border-radius: 40px;
-    background: $surface;
-    .card-body {
-        h5 {
-            font-size: 36px;
-            font-weight: bold !important;
-            color: $secondary;
-            padding: 0px 20px;
-            margin-bottom: 50px;
-        }
-        p {
-            font-size: 18px;
-            color: $onsurface;
-            line-height: 32px;
-        }
+    background: $background;
+    height: 250px;
+    h5 {
+        color: #e34c26;
+        font-size: 30px;
+        font-weight: bold !important;
+        padding: 0px 20px;
+        margin-bottom: 50px;
+    }
+    p {
+        color: #e5e7e9;
+        font-size: 18px;
+        line-height: 32px;
     }
 }
 
