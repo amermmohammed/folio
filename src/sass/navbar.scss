@@ -1,0 +1,97 @@
+section {
+  .navbar-bg {
+    background-color: $surface;
+    padding: 0 15px 0 15px;
+    #nav-content {
+      overflow: hidden;
+      position: relative;
+      ul {
+        padding: 0px;
+        margin: 0px;
+
+        li {
+          list-style-type: none;
+          float: left;
+          &.active {
+            a {
+              color: $onsurface;
+              background-color: transparent;
+              transition: all 0.7s;
+            }
+          }
+
+          a {
+            color: rgba(($onsurface), 0.5);
+            text-decoration: none;
+            font-size: 15px;
+            display: block;
+            padding: 20px 20px;
+            transition-duration: 0.6s;
+            transition-timing-function: cubic-bezier(0.68, -0.55, 0.265, 1.55);
+            position: relative;
+
+            i {
+              margin-right: 10px;
+            }
+          }
+        }
+      }
+    }
+  }
+  .navbar-nav {
+    .nav-selector {
+      display: inline-block;
+      position: absolute;
+      height: 100%;
+      top: 0px;
+      left: 0px;
+      transition-duration: 0.6s;
+      transition-timing-function: cubic-bezier(0.68, -0.55, 0.265, 1.55);
+      background-color: $secondary;
+      border-top-left-radius: 15px;
+      border-top-right-radius: 15px;
+      margin-top: 10px;
+    }
+  }
+}
+
+@media (min-width: 992px) {
+  .navbar-custom-expand {
+    -ms-flex-flow: row nowrap;
+    flex-flow: row nowrap;
+    -ms-flex-pack: start;
+    justify-content: flex-start;
+    .navbar-nav {
+      -ms-flex-direction: row;
+      flex-direction: row;
+    }
+    .navbar-toggler {
+      display: none;
+    }
+    .navbar-collapse {
+      display: -ms-flexbox !important;
+      display: flex !important;
+      -ms-flex-preferred-size: auto;
+      flex-basis: auto;
+    }
+  }
+}
+
+@media (max-width: 991px) {
+  #nav-content {
+    ul {
+      li {
+        a {
+          padding: 12px 30px;
+        }
+      }
+      .nav-selector {
+        margin-top: 0px;
+        margin-left: 10px;
+        border-radius: 0;
+        border-top-left-radius: 25px;
+        border-bottom-left-radius: 25px;
+      }
+    }
+  }
+}

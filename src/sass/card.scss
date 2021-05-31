@@ -1,0 +1,138 @@
+section.infos {
+    padding: 25px 0;
+    background-color: $background;
+    .info {
+        padding: 70px 0px;
+        .custom-card {
+            @include custom-card;
+            img {
+                margin: 10px 4rem;
+            }
+            .card-body {
+                margin-top: 50px;
+                h5 {
+                    font-size: 36px;
+                    font-weight: bold !important;
+                    color: $primary;
+                    border-left: 2px solid $primary;
+                    padding: 0px 20px;
+                    margin-bottom: 50px;
+                    span {
+                        color: $secondary;
+                    }
+                }
+                h6 {
+                    font-size: 25px;
+                    font-weight: bold !important;
+                    color: $onsurface;
+                    margin-bottom: 50px;
+                }
+                p {
+                    font-size: 18px;
+                    color: $onsurface;
+                    line-height: 32px;
+                    text-align: justify;
+                }
+            }
+        }
+    }
+}
+
+section.experience {
+    .card {
+        background-color: transparent;
+    }
+    .custom-card-small {
+        @include custom-card-small;
+    }
+}
+
+section.education {
+    .card {
+        background-color: transparent;
+    }
+    .custom-card-small {
+        @include custom-card-small;
+    }
+}
+
+.cards {
+    display: flex;
+}
+
+.gallarycard {
+    background: $surface;
+    border: 2px solid $primary;
+    height: 300px;
+    width: 300px;
+    border-radius: 1rem;
+    padding: 1.5rem;
+    transition: 0.5s ease-in-out;
+    overflow: hidden;
+    img {
+        max-width: 100%;
+        border-radius: 20px;
+    }
+    h2 {
+        font-size: 30px;
+        font-weight: bold !important;
+        color: $primary;
+        padding: 0px 20px;
+        margin-bottom: 50px;
+        a {
+            color: $secondary;
+        }
+    }
+    p {
+        color: $onsurface;
+    }
+}
+
+.gallarycard:not(:first-child) {
+    margin-left: -2rem;
+}
+
+.gallarycard:not(:last-child):hover,
+.gallarycard:not(:last-child):focus-within {
+    transform: translateY(-1rem);
+    ~.gallarycard {
+        transform: translateX(2rem);
+    }
+}
+
+.gallarycard {
+    img {
+        transition: 1.5s ease-in-out;
+    }
+}
+
+.gallarycard:hover,
+.gallarycard:focus-within {
+    .img1 {
+        transform: translateY(-25rem);
+    }
+    .img2 {
+        transform: translateY(-9rem);
+    }
+    .img3 {
+        transform: translateY(-12rem);
+    }
+    .img4 {
+        transform: translateY(-27rem);
+    }
+    .img5 {
+        transform: translateY(-28rem);
+    }
+    .img6 {
+        transform: translateY(-16rem);
+    }
+    .img7 {
+        transform: translateY(-35rem);
+    }
+    .img8 {
+        transform: translateY(-26rem);
+    }
+    .img9 {
+        transform: translateY(-13rem);
+    }
+}

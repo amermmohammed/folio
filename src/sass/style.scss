@@ -1,0 +1,29 @@
+@import './_variable.scss';
+@import './navbar.scss';
+@import './mixin.scss';
+@import './card.scss';
+@font-face {
+    font-family: "cairoFont";
+    src: url(../fonts/Cairo-Regular.ttf);
+}
+
+body {
+    font-family: "cairoFont", 'Cambira, Cochin, Georgia, Times, Times New Roman, serif' !important;
+    background-color: $background;
+    margin: 0;
+    display: grid;
+    place-items: center;
+}
+
+// main-container
+.container-fluid {
+    padding-right: 0px !important;
+    padding-left: 0px !important;
+    overflow-x: hidden;
+}
+
+#copyright {
+    color: red;
+    font-size: 24px;
+    z-index: 10;
+}
