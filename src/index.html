@@ -8,19 +8,19 @@
     <title>Amer M. Mohammed</title>
 </head>
 
-<body>
+<body data-spy="scroll" data-target=".navbar" data-offset="100">
     <div class="container-fluid">
         <!--Navbar-->
         <section class="nav-sec">
             <nav class="navbar navbar-custom-expand navbar-bg fixed-top">
-                <a class="navbar-brand nav-logo" href="#"><img src="./images/logo.png" alt="mylogo"></a>
+                <a class="navbar-brand nav-logo" href="index.html"><img src="./images/logo.png" alt="mylogo"></a>
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#nav-content" aria-controls="nav-content" aria-expanded="false" aria-label="Toggle navigation">
                     <i class="fas fa-bars text-white"></i>
                 </button>
                 <div class="collapse navbar-collapse" id="nav-content">
                     <ul class="navbar-nav ml-auto">
                         <div class="nav-selector"></div>
-                        <li class="nav-item active">
+                        <li class="nav-item first-list-element">
                             <a class="nav-link" href="#Info">Home</a>
                         </li>
                         <li class="nav-item">
@@ -279,7 +279,7 @@
             <div class="container">
                 <h2 class="text-center">Contact Me</h2>
                 <div id="contact-options" class="row py-5">
-                    <div class="col-12 col-lg-3 offset-lg-2 aos-init aos-animate mx-auto" data-aos="fade-right">
+                    <div class="col-12 col-lg-3 offset-lg-2 aos-init aos-animate mx-auto">
                         <h4 class="heading-with-border-bottom"> Contact Information </h4>
                         <div id="contact-info ">
                             <div class="info mb-2">
@@ -290,12 +290,18 @@
                                 <i class="fas fa-map-marker-alt fa-lg"></i> Address: Saarbruecken, Saarland-Germany </div>
                         </div>
                     </div>
-                    <div class="col-12 col-lg-6 aos-init aos-animate mx-auto" data-aos="fade-left">
+                    <div class="col-12 col-lg-6 aos-init aos-animate mx-auto">
                         <h4>Leave Message</h4>
                         <form class="row" action="https://formspree.io/f/xwkavlqg" method="POST">
-                            <div class="col-md-6 form-group"> <input class="form-control custom-input-details custom-form-control" name="name" type="text" placeholder="name" required="" data-fillr-id="352010682" data-fillr="bound" autocomplete="off"> </div>
-                            <div class="col-md-6 form-group"> <input class="form-control custom-input-details custom-form-control" name="_replyto" type="email" placeholder="E-mail" required="" data-fillr-id="185929154" data-fillr="bound" autocomplete="off"> </div>
-                            <div class="col-12 form-group"> <textarea class="form-control custom-input-details custom-form-control" name="message" placeholder="message text" required="" data-fillr-id="730895088" data-fillr="bound" autocomplete="off"></textarea> </div>
+                            <div class="col-md-6 form-group">
+                                <input class="form-control custom-input-details custom-form-control" name="name" type="text" placeholder="name" required>
+                            </div>
+                            <div class="col-md-6 form-group">
+                                <input class="form-control custom-input-details custom-form-control" name="_replyto" type="email" placeholder="E-mail" required>
+                            </div>
+                            <div class="col-12 form-group">
+                                <textarea class="form-control custom-input-details custom-form-control" name="message" placeholder="message text" required></textarea>
+                            </div>
                             <div class="col-12 form-group">
                                 <div class="clearfix"> <button type="submit" class="btn btn-primary custom-btn"> <span> Send Me </span> </button> </div>
                             </div>
