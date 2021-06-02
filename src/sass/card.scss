@@ -146,6 +146,12 @@ section.portfolio {
                         left: 28px;
                         z-index: 10;
                         display: none;
+                        &:hover {
+                            background: $primary;
+                            a {
+                                color: $onprim;
+                            }
+                        }
                     }
                     .custom-btn1 {
                         @include custom-btn;
@@ -154,6 +160,12 @@ section.portfolio {
                         right: 28px;
                         z-index: 10;
                         display: none;
+                        &:hover {
+                            background: $primary;
+                            a {
+                                color: $onprim;
+                            }
+                        }
                     }
                     img {
                         transition: 3s ease-in-out;
@@ -183,6 +195,70 @@ section.portfolio {
             }
             h2 {
                 color: $secondary !important;
+            }
+        }
+    }
+}
+
+section.wall {
+    h2 {
+        font-size: 46px;
+        font-weight: bold !important;
+        color: #58a6ff;
+        padding: 0px 20px;
+        margin-bottom: 50px;
+    }
+    .container {
+        border-radius: 30px;
+        background-color: $surface;
+        .row {
+            .cards {
+                .gallarycard {
+                    background: $background;
+                    border: 2px solid $primary;
+                    height: 300px;
+                    border-radius: 1rem;
+                    padding: 1.5rem;
+                    overflow: hidden;
+                    margin: 2rem;
+                    position: relative;
+                    &:hover,
+                    &:focus-within {
+                        .custom-btn {
+                            display: block;
+                        }
+                        .custom-btn1 {
+                            display: block;
+                        }
+                        border: 2px solid $secondary;
+                    }
+                    .custom-btn {
+                        @include custom-btn;
+                        position: absolute;
+                        bottom: 10PX;
+                        left: 100PX;
+                        z-index: 10;
+                        display: none;
+                        transition: 0.5s ease-in;
+                        &:hover {
+                            background: $primary;
+                            a {
+                                color: $onprim;
+                            }
+                        }
+                    }
+                    img {
+                        max-width: 100%;
+                        border-radius: 2px;
+                    }
+                    h2 {
+                        font-size: 30px;
+                        color: $secondary;
+                        font-weight: bold !important;
+                        padding: 0px 20px;
+                        margin-bottom: 10px;
+                    }
+                }
             }
         }
     }

@@ -4,16 +4,41 @@
     }
 }
 
+@media (min-width:1200px) {
+    section.wall {
+        .container {
+            .row {
+                .cards {
+                    .gallarycard {
+                        .custom-btn {
+                            position: absolute;
+                            bottom: 36%;
+                            left: 39%;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
 @media (max-width: 1199px) {
-    section.portfolio .container .row .cards .gallarycard h2 {
-        font-size: 27px;
+    section.portfolio {
+        .container {
+            .row {
+                .cards {
+                    .gallarycard {
+                        h2 {
+                            font-size: 27px;
+                        }
+                    }
+                }
+            }
+        }
     }
 }
 
 @media (min-width: 767px) and (max-width: 991px) {
-    section.portfolio .container .row .cards .gallarycard h2 {
-        font-size: 22px;
-    }
     section.portfolio {
         background-image: url(../images/port.png);
         background-repeat: no-repeat;
@@ -83,6 +108,25 @@
                                 font-size: 12px !important;
                             }
                         }
+                        h2 {
+                            font-size: 22px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    section.wall {
+        .container {
+            .row {
+                .cards {
+                    .gallarycard {
+                        height: 225px;
+                        .custom-btn {
+                            position: absolute;
+                            bottom: 36%;
+                            left: 30%;
+                        }
                     }
                 }
             }
@@ -91,70 +135,130 @@
 }
 
 @media (max-width: 991px) {
-    section.experience .container .row .card h5,
-    section.education .container .row .card h5 {
-        font-size: 28px;
-        padding: 0;
-        margin-bottom: 30px;
+    section.experience,
+    section.education {
+        .container {
+            .row {
+                .card {
+                    h5 {
+                        font-size: 28px;
+                        padding: 0;
+                        margin-bottom: 30px;
+                    }
+                    p {
+                        font-size: 16px;
+                    }
+                }
+            }
+        }
     }
-    section.experience .container .row .card p,
-    section.education .container .row .card p {
-        font-size: 16px;
-    }
-    section.portfolio .container .row .cards .gallarycard {
-        height: 210px;
+    section.portfolio {
+        .container {
+            .row {
+                .cards {
+                    .gallarycard {
+                        height: 210px;
+                    }
+                }
+            }
+        }
     }
 }
 
 @media (max-width: 767px) {
-    section.infos .info .custom-card img {
-        margin: 0 0rem;
+    section.infos {
+        .info {
+            .custom-card {
+                img {
+                    margin: 0 0rem;
+                }
+                .card-body {
+                    h5 {
+                        font-size: 30px;
+                        padding: 0px 10px;
+                        margin-bottom: 30px;
+                    }
+                    h6 {
+                        font-size: 20px;
+                        margin-bottom: 30px;
+                    }
+                    p {
+                        font-size: 18px;
+                        color: #e5e7e9;
+                        line-height: 25px;
+                        text-align: justify;
+                    }
+                }
+            }
+        }
     }
-    section.infos .info .custom-card .card-body h5 {
-        font-size: 30px;
-        padding: 0px 10px;
-        margin-bottom: 30px;
+    section.portfolio {
+        .container {
+            .row {
+                .cards {
+                    .gallarycard {
+                        height: 300px !important;
+                        width: 90%;
+                    }
+                }
+            }
+        }
     }
-    section.infos .info .custom-card .card-body h6 {
-        font-size: 20px;
-        margin-bottom: 30px;
-    }
-    section.infos .info .custom-card .card-body p {
-        font-size: 18px;
-        color: #e5e7e9;
-        line-height: 25px;
-        text-align: justify;
-    }
-    section.portfolio .container .row .cards .gallarycard {
-        height: 300px !important;
-        width: 90%;
+    section.wall {
+        .container {
+            .row {
+                .cards {
+                    .gallarycard {
+                        height: 425px;
+                        .custom-btn {
+                            position: absolute;
+                            bottom: 39%;
+                            left: 42%;
+                        }
+                    }
+                }
+            }
+        }
     }
 }
 
 @media (max-width: 575px) {
-    section.infos .info .custom-card .card-body {
-        margin-top: -9px;
+    section.infos {
+        .info {
+            .custom-card {
+                .card-body {
+                    margin-top: -9px;
+                }
+            }
+        }
     }
-    section.education .container .row,
-    section.experience .container .row {
-        border-radius: 30px;
-        background: rgba(($surface), 0.8);
+    section.education,
+    section.experience {
+        .container {
+            .row {
+                border-radius: 30px;
+                background: rgba(($surface), 0.8);
+            }
+        }
     }
-    section.education .container .row .card,
-    section.experience .container .row .card {
-        background: rgba(($background), 0.8);
+    section.education,
+    section.experience {
+        .container {
+            .row {
+                .card {
+                    background: rgba(($background), 0.8);
+                }
+            }
+        }
     }
-    section.portfolio .container {
-        border-radius: 30px;
-        background-color: transparent !important;
-    }
-    section.portfolio .container .row .cards .gallarycard {
-        background: rgba(($surface), 0.8);
-    }
-    section.contact .container .row {
-        margin-left: 0px;
-        margin-right: 0px;
-        background: rgba(($surface), 0.8);
+    section.contact {
+        .container {
+            .row {
+                margin-left: 0px;
+                margin-right: 0px;
+                background: rgba(($surface), 0.8);
+            }
+        }
     }
     section.portfolio {
         background-image: url(../images/port.png);
@@ -169,10 +273,11 @@
         }
         .container {
             border-radius: 30px;
-            background-color: $surface;
+            background-color: transparent !important;
             .row {
                 .cards {
                     .gallarycard {
+                        background: rgba(($surface), 0.8);
                         &:hover,
                         &:focus-within {
                             .img1 {
@@ -211,7 +316,62 @@
             }
         }
     }
+    section.wall {
+        .container {
+            .row {
+                .cards {
+                    .gallarycard {
+                        img {
+                            max-width: 95%;
+                        }
+                    }
+                }
+            }
+        }
+    }
     #copyright {
         font-size: 20px !important;
+    }
+}
+
+@media (max-width:400px) {
+    section.infos {
+        .info {
+            .custom-card {
+                .card-body {
+                    h5 {
+                        font-size: 20px;
+                        padding: 0px 10px;
+                        margin-bottom: 30px;
+                    }
+                    h6 {
+                        font-size: 15px;
+                        margin-bottom: 30px;
+                    }
+                    p {
+                        font-size: 12px;
+                        color: #e5e7e9;
+                        line-height: 15px;
+                        text-align: justify;
+                    }
+                }
+            }
+        }
+    }
+    section.wall {
+        .container {
+            .row {
+                .cards {
+                    .gallarycard {
+                        height: 305px;
+                        .custom-btn {
+                            position: absolute;
+                            bottom: 39%;
+                            left: 38%;
+                        }
+                    }
+                }
+            }
+        }
     }
 }
