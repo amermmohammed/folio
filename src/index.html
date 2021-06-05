@@ -13,10 +13,19 @@
         <!--Navbar-->
         <section class="nav-sec">
             <nav class="navbar navbar-custom-expand navbar-bg fixed-top">
-                <a class="navbar-brand nav-logo" href="index.html"><img src="./images/logo.png" alt="mylogo"></a>
+                <a class="navbar-brand nav-logo" href="index.html">
+                    <img class="dark-logo" src="./images/logo.png" alt="mylogo">
+                    <img class="d-none light-logo" src="./images/lightlogo.png" alt="mylogo">
+                </a>
+                <div class="switch-mode">
+                    <span></span>
+                </div>
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#nav-content" aria-controls="nav-content" aria-expanded="false" aria-label="Toggle navigation">
                     <i class="fas fa-bars text-white"></i>
                 </button>
+                <div class="mode d-none .d-sm-block .d-md-block d-lg-none">
+                    <span></span>
+                </div>
                 <div class="collapse navbar-collapse" id="nav-content">
                     <ul class="navbar-nav ml-auto">
                         <div class="nav-selector"></div>
@@ -43,6 +52,8 @@
                         </li>
                     </ul>
                 </div>
+
+
             </nav>
         </section>
         <!--about me-->
@@ -76,7 +87,7 @@
         <section id="Experience" class="experience my-5 ">
             <div class="container">
                 <h2 class="text-center">Experience</h2>
-                <div class="row text-center mx-auto ">
+                <div class="row light-row text-center mx-auto ">
                     <div class="col-12 col-md-4 my-3">
                         <div class="card custom-card-primary">
                             <div class="card-body my-5">
@@ -112,7 +123,7 @@
         <section id="Education" class="education my-5">
             <div class="container">
                 <h2 class="text-center">Education</h2>
-                <div class="row text-center mx-auto">
+                <div class="row light-row text-center mx-auto">
                     <div class="col-12 col-md-4 my-3">
                         <div class="card custom-card-primary">
                             <div class="card-body my-5">
@@ -144,7 +155,7 @@
         <!--PORTFOLIO-->
         <section id="Portfolio" class="portfolio my-5">
             <h2 class="text-center">PORTFOLIO</h2>
-            <div class="container justify-content-center mx-auto">
+            <div class="container light-conatainer justify-content-center mx-auto">
                 <div class="row">
                     <div class="col-12 col-md-4 my-3">
                         <div class="cards my-2">
@@ -283,7 +294,7 @@
 
         <section id="Wall" class="wall my-5">
             <h2 class="text-center">Wall of Glory</h2>
-            <div class="container justify-content-center mx-auto">
+            <div class="container  light-conatainer justify-content-center mx-auto">
                 <div class="row">
                     <div class="col-12 col-md-4 my-3">
                         <div class="cards my-2">
@@ -323,7 +334,7 @@
         <section id="Contact" class="contact my-5">
             <div class="container">
                 <h2 class="text-center">Contact Me</h2>
-                <div id="contact-options" class="row py-5">
+                <div id="contact-options" class="row light-row py-5">
                     <div class="col-12 col-lg-3 offset-lg-2 aos-init aos-animate mx-auto">
                         <h4 class="heading-with-border-bottom"> Contact Information </h4>
                         <div id="contact-info ">
@@ -337,15 +348,15 @@
                     </div>
                     <div class="col-12 col-lg-6 aos-init aos-animate mx-auto">
                         <h4>Leave Message</h4>
-                        <form class="row" action="https://formspree.io/f/xwkavlqg" method="POST">
+                        <form class="row light-row" action="https://formspree.io/f/xwkavlqg" method="POST">
                             <div class="col-md-6 form-group">
-                                <input class="form-control custom-input-details custom-form-control" name="name" type="text" placeholder="name" required>
+                                <input class="form-control custom-input-details custom-form-control light-row" name="name" type="text" placeholder="name" required>
                             </div>
                             <div class="col-md-6 form-group">
-                                <input class="form-control custom-input-details custom-form-control" name="_replyto" type="email" placeholder="E-mail" required>
+                                <input class="form-control custom-input-details custom-form-control light-row" name="_replyto" type="email" placeholder="E-mail" required>
                             </div>
                             <div class="col-12 form-group">
-                                <textarea class="form-control custom-input-details custom-form-control" name="message" placeholder="message text" required></textarea>
+                                <textarea class="form-control custom-input-details custom-form-control light-row" name="message" placeholder="message text" required></textarea>
                             </div>
                             <div class="col-12 form-group">
                                 <div class="clearfix"> <button type="submit" class="btn btn-primary custom-btn"> <span> Send Me </span> </button> </div>

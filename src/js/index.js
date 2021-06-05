@@ -90,9 +90,31 @@ $(".navbar-toggler").click(function() {
 });
 $('#copyright').text("Made with ❤ by Amer" + " " + new Date().getFullYear());
 
+$("button").click(function() {
 
+});
 
-
+//mode toggler
+$('.switch-mode').click(function() {
+    $(".navbar-bg").toggleClass("light1");
+    $("html").toggleClass("light1");
+    $("body").toggleClass("light1");
+    $("#Info").toggleClass("light1");
+    $("#Experience").toggleClass("light1");
+    $("#Education").toggleClass("light1");
+    $("#Portfolio").toggleClass("light1");
+    $("#Wall").toggleClass("light1");
+    $("#Contact").toggleClass("light1");
+    $("#Footer").toggleClass("light1");
+    $(".custom-card").toggleClass("light2");
+    $(".card").toggleClass("light2");
+    $(".gallarycard").toggleClass("light2");
+    $(".light-row").toggleClass("light3");
+    $(".light-conatainer").toggleClass("light3");
+    $(".dark-logo").toggleClass("d-none");
+    $(".light-logo").toggleClass("d-block");
+    $(this).toggleClass("active");
+});
 
 
 
