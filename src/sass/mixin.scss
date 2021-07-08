@@ -21,7 +21,12 @@ body {
     border-radius: 40px;
     background: $surface;
 }
-
+@mixin custom-card2 {
+    display: flex;
+    border: none;
+    border-radius: 40px;
+   
+}
 @mixin custom-card-primary {
     border: none;
     border-radius: 40px;

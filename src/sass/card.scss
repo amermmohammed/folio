@@ -4,7 +4,13 @@ section.infos {
     .info {
         padding: 70px 0px;
         .custom-card {
-            @include custom-card;
+            background-image: url("../images/bg.png") !important;
+            background-position: center center;
+            background-repeat: no-repeat !important;
+            background-size:cover;
+            
+            @include custom-card2;
+            
             img {
                 margin: 10px 4rem;
             }
@@ -14,19 +20,21 @@ section.infos {
                     font-size: 36px;
                     font-weight: bold !important;
                     color: $primary;
-                    border-left: 2px solid $primary;
                     padding: 0px 20px;
                     margin-bottom: 50px;
                     span {
                         color: $secondary;
                     }
                 }
-                h6 {
+                h6 {a{
+                    color: $onsurface !important;
+                }
                     font-size: 25px;
                     font-weight: bold !important;
                     color: $onsurface;
                     margin-bottom: 50px;
                 }
+              
                 p {
                     font-size: 18px;
                     color: $onsurface;
@@ -44,11 +52,19 @@ section.infos {
         }
     }
 }
-
+section.skiles{
+    padding: 25px 0;
+    background-color: $background;
+    .container {
+        .row {
+            border-radius: 30px;
+            padding: 20px;
+            background-color: $surface;
+            
+        }
+    }
+}
 section.experience {
-    background-image: url(../images/exper.png);
-    background-repeat: no-repeat;
-    background-position: right;
     .container {
         .row {
             border-radius: 30px;
@@ -61,8 +77,6 @@ section.experience {
 }
 
 section.education {
-    background-image: url(../images/edu.png);
-    background-repeat: no-repeat;
     .container {
         .row {
             border-radius: 30px;
@@ -75,9 +89,6 @@ section.education {
 }
 
 section.portfolio {
-    background-image: url(../images/port.png);
-    background-repeat: no-repeat;
-    background-position: right;
     h2 {
         font-size: 46px;
         font-weight: bold !important;
